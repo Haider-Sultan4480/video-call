@@ -15,7 +15,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // Serve index.html on GET request
 app.get("/", (req, res) => {
     console.log("GET Request /");
-    res.sendFile(join(__dirname, "app", "index.html"));
+    res.send("Hello World");
+    // res.sendFile(join(__dirname, "app", "index.html"));
 });
 
 // Expose the public directory
